@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
+<title>오늘의 감자 리포트</title>
+<style>
+:root{--bg:#f5eddf;--paper:#fffaf0;--card:#fff7e8;--ink:#2f261b;--muted:#766856;--line:#e4d3b8;--potato:#c58d3d;--green:#207a48;--red:#a43d2f;--amber:#9b6a18;}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#f2e6d4,#fff8ed);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',Arial,sans-serif;color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 22px 46px} .hero{border:1px solid var(--line);background:radial-gradient(circle at 15% 0%,#ffe0a6 0,#fff8ed 38%,#fff3df 100%);border-radius:28px;padding:28px;box-shadow:0 18px 45px rgba(92,60,20,.12)}
+.label{display:inline-flex;gap:8px;align-items:center;background:#ead4ae;border:1px solid #d2aa6d;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:700;color:#654411} h1{font-size:48px;line-height:1.05;margin:18px 0 8px;letter-spacing:-1.8px} .subtitle{font-size:17px;color:var(--muted);margin:0;max-width:850px}
+.notice{margin-top:16px;padding:12px 14px;border-radius:16px;background:#fff3d1;border:1px dashed #d19b3b;font-weight:700;color:#6d4810}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px} .meta-card,.summary-card,.panel,.news-card{background:rgba(255,250,240,.92);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 10px 28px rgba(91,63,25,.08)}
+.meta-card{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px} .meta-card div{background:#fff7e7;border-radius:16px;padding:13px;border:1px solid #ead7ba} small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:12px} .meta-card b{display:block;margin-top:6px;font-size:16px}
+.summary-card h2{font-size:28px;margin:7px 0 8px} .summary-card p{margin:0;color:var(--muted);line-height:1.55} .section-title{display:flex;align-items:end;justify-content:space-between;margin:28px 0 12px} .section-title h2{margin:0;font-size:28px} .section-title span{color:var(--muted);font-weight:700}
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:15px} .news-card h3{font-size:18px;margin:0 0 5px;line-height:1.35} .news-card p{line-height:1.62;color:#4c4032} .news-top{display:flex;gap:12px;align-items:flex-start} .score{min-width:44px;height:38px;border-radius:14px;display:grid;place-items:center;font-weight:900;border:1px solid} .pos{color:var(--green)} .neg{color:var(--red)} .mix{color:var(--amber)} .score.pos{background:#e7f4eb;border-color:#bdddc8} .score.neg{background:#f8e7e2;border-color:#e5bbb2} .score.mix{background:#fff0cf;border-color:#e8c87c} .meta{margin:0!important;color:var(--muted)!important;font-size:13px} .tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0} .tags span{background:#f1dfbf;border:1px solid #dec494;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:700;color:#634716} a{color:#8a5200;font-weight:800;text-decoration:none;word-break:break-all}
+table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:18px} th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} th{background:#eddbbd;color:#5d4218;font-size:13px} tr:last-child td{border-bottom:0} .timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px} .timeline li{display:grid;grid-template-columns:190px 1fr;gap:12px;padding:12px;background:#fff7e8;border:1px solid var(--line);border-radius:16px} .timeline b{color:#7a4d08} .timeline span{line-height:1.45}
+.status{position:static;margin-top:24px;background:#2f261b;color:#fff5e6;border-radius:18px;padding:14px 18px;display:flex;justify-content:space-between;gap:12px;box-shadow:0 -8px 26px rgba(0,0,0,.12)} .status b{color:#ffd487}
+@media(max-width:900px){.grid,.news-list{grid-template-columns:1fr}.meta-card{grid-template-columns:1fr 1fr}h1{font-size:38px}.timeline li{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main class='wrap'>
+<header class='hero'><span class='label'>🥔 daily_report_potato · news signal brief</span><h1>오늘의 감자 리포트</h1><p class='subtitle'>최근 24시간 공개 뉴스 기반 코인/크립토 및 국제경제 브리핑. URL·출처·발행시각이 확인되는 항목만 포함했습니다.</p><div class='notice'>공개 뉴스 기반 요약이며 투자 조언/금융·사업 투자 권유가 아님.</div></header>
+<section class='meta-card'><div><small>작성 시각</small><b>2026-05-27 07:00:49 KST (Asia/Seoul)</b></div><div><small>뉴스 범위</small><b>2026-05-26 07:00 KST 이후 약 24시간 (Google News RSS 최신성 기준)</b></div><div><small>뉴스 수</small><b>10개</b></div><div><small>최종 시그널</small><b>Neutral · +1점</b></div></section>
+<section class='grid'><section class='summary-card'><small>뉴스 기반 시그널</small><h2>Neutral</h2><p>총점 +1: 크립토 내성·유가 완화 호재와 관세·강달러·지정학 부담이 충돌</p></section>
+<section class='summary-card'><small>크립토 핵심</small><h2>BTC/ETH 견조</h2><p>변동성 9개월 저점, Strategy BTC 보유 확대, 제재 뉴스가 동시에 등장</p></section>
+<section class='summary-card'><small>매크로 핵심</small><h2>방어적 균형</h2><p>USMCA 관세 가능성·Fed higher-for-longer·중동 유가 리스크가 위험 선호를 제한</p></section></section>
+<div class='section-title'><h2>상세 뉴스 리스트</h2><span>각 항목: 제목·출처·시각·URL·요약·영향 방향·강도·테마</span></div><section class='news-list'><article class='news-card'>
+  <div class='news-top'><span class='score neg'>-1</span><div><h3>UK targets Russian crypto networks in latest sanctions</h3><p class='meta'>Reuters · 2026-05-27 04:56:06 KST (Tue, 26 May 2026 19:56:06 GMT)</p></div></div>
+  <p>영국이 러시아 관련 암호화폐 네트워크와 금융 인프라를 겨냥한 추가 제재를 냈다는 Reuters 보도. 불법/제재 회피성 크립토 흐름에는 압박 요인이나, 규정 준수 인프라에는 장기적으로 차별화 가능성이 있다.</p>
+  <div class='tags'><span>영향: 악재</span><span>강도: -1</span><span>암호화폐 규제, 러시아 제재, 컴플라이언스</span></div>
+  <a href='https://news.google.com/rss/articles/CBMimAFBVV95cUxQM2hDVXJmTWVoQWVQazFLUElkOGd3VWRZaWVJZmdTR1RQVHk1dEZWRlJfbzFjYUlXcGdFRWlyTHQ1MnlpVHF1UFR6TXQ4MkhlcjJZWmtOLWkzSVVoUkozLXBOY1VQMnpQamdEU2VhNHZYTXdSN3c2Tmw1TE52UVYydnpFTkpVM2RmX01nZEtvM1hwVVlyM2staw?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score neg'>-1</span><div><h3>US plans tariffs on USMCA countries, has issues with Canada</h3><p class='meta'>Reuters · 2026-05-27 06:00:37 KST (Tue, 26 May 2026 21:00:37 GMT)</p></div></div>
+  <p>미국이 USMCA 회원국 대상 관세를 검토하고 캐나다와 이견이 있다는 Reuters 보도. 북미 교역 비용과 공급망 불확실성 확대 가능성이 있어 위험자산에는 부담이다.</p>
+  <div class='tags'><span>영향: 악재</span><span>강도: -1</span><span>무역, 관세, 달러, 북미 공급망, 주식</span></div>
+  <a href='https://news.google.com/rss/articles/CBMiogFBVV95cUxNZEJVOXkzN0twSExVQ29ud1ZmckM0Y3VjNmUzOW1ubllsQUNweWFhNkxYYXBlRXhFM1FBLUZoT2xLVFh3MFRtcmxZSXU3NER1UkU5VG5zTnlTYUhHZU5EeWkzdjZ0YUtoMHZ1Z3BZYzZ6Tm5CcWdvT1FqRHgwZEVMY3ZZWEdWYmVlYnpsRG5qWkVjMVVaQk5XRTN3bW5VWVFjTWc?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score mix'>+0</span><div><h3>Oil Jumps on Fresh US Strikes on Iran but Stocks Stay Upbeat</h3><p class='meta'>Investing.com · 2026-05-26 20:03:33 KST (Tue, 26 May 2026 11:03:33 GMT)</p></div></div>
+  <p>미국의 이란 공습 관련 헤드라인에 유가가 뛰었지만 주식은 견조했다는 보도. 에너지 가격 상승은 인플레이션/성장 부담이나, 증시 반응은 아직 패닉이 아님을 시사한다.</p>
+  <div class='tags'><span>영향: 혼재/불확실</span><span>강도: +0</span><span>WTI/브렌트, 중동 지정학, 글로벌 주식, 인플레이션</span></div>
+  <a href='https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcUNsaU4zMWwzZkxDVnhFNUdBMFJwNjhJd19sdXVROTM2SDh1dzl5eWNiVHdnREZQdEkzZHVvRVgzd1NsQkNwVll2YWZWSmROOVVtaEV5OTRKSS1DZlVFc1ZEN3pUc29DLU1tV3NFNERKMTZzeU1zQzc5Q0hZMFg4UmszZXhzdG83MUR6dzdrcTRWbDBmNWIyMEc5TTRZNGpPUWR4clBUNVQ?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score pos'>+1</span><div><h3>Bitcoin (BTC) Volatility Hits Nine-Month Low as Crypto Takes Breather</h3><p class='meta'>Bloomberg.com · 2026-05-26 15:47:00 KST (Tue, 26 May 2026 06:47:00 GMT)</p></div></div>
+  <p>비트코인 변동성이 9개월 저점에 도달했다는 Bloomberg 헤드라인. 단기 과열 완화와 안정화 신호로 볼 수 있지만, 변동성 축소 이후 방향성 돌파 리스크도 남아 있다.</p>
+  <div class='tags'><span>영향: 호재</span><span>강도: +1</span><span>BTC, 크립토 변동성, 옵션/파생</span></div>
+  <a href='https://news.google.com/rss/articles/CBMiugFBVV95cUxOaHRxWU5wWk1ualp2dl9EcHlvY0NWNWRGZ0lPRk1QdXdwYjVQX0FGZWJMOFZpd3pHdmkzeUFIRUVHWTU4ekhCREpjQ1NIRVJVUU5pOC0zUFd1QVh4dnhLVkZsVjVPTVV6TnJjU1ZMOE9Jem1zNWZKVGZnY3ItdUJkWC1seUFfT2tlbmhIajk5bUpPeThVdlhLV0VWUEEzWTZERDNYZmpKQi1qVGtWMFFvQmkwWmNNQ0phdnc?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score neg'>-1</span><div><h3>US Dollar: Supported by higher-for-longer Fed stance – TD Securities</h3><p class='meta'>FXStreet · 2026-05-27 00:06:25 KST (Tue, 26 May 2026 15:06:25 GMT)</p></div></div>
+  <p>TD Securities가 연준의 higher-for-longer 기조가 달러를 지지한다고 평가했다는 FXStreet 보도. 강달러/높은 금리 환경은 신흥국·원자재·크립토 등 위험자산의 할인율 부담으로 작용할 수 있다.</p>
+  <div class='tags'><span>영향: 악재</span><span>강도: -1</span><span>미 달러, Fed, 금리, 금, BTC, 신흥국</span></div>
+  <a href='https://news.google.com/rss/articles/CBMirAFBVV95cUxQSGk1YmZaaFZfUFdxakxzWG9kUlZuWVFGbGwxVVBsa2dsb3ZFQWhuamR4RVJaX0NsS1VhODQ4TGtDal95dndhMGdUQjN4QkZTUVNnaEVpT1dzWElpTE1oelpwM2lDcWk0QXRLVXMxbXZXRXZaTWlMZzZ5LUU4QkIzUk9Ua21fNVBCYzRsZTdOZkpDOGVfV1lDSGE5TGNqYUZYOTk2NmpXa1JvYjA4?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score pos'>+1</span><div><h3>Strategy Completes $1.5 Billion Debt Repurchase and achieves BTC Yield of 13.3% YTD; Now Holds 843,738 BTC</h3><p class='meta'>Strategy · 2026-05-26 21:14:21 KST (Tue, 26 May 2026 12:14:21 GMT)</p></div></div>
+  <p>Strategy가 15억 달러 규모 부채 재매입을 완료했고 YTD BTC Yield 13.3%, 보유 BTC 843,738개를 공시했다는 보도. 대형 기업 재무전략 내 BTC 노출 지속은 비트코인 수요 서사에 우호적이다.</p>
+  <div class='tags'><span>영향: 호재</span><span>강도: +1</span><span>BTC, 기업 재무, Strategy/MSTR</span></div>
+  <a href='https://news.google.com/rss/articles/CBMi3AFBVV95cUxORS1Xd3I0YXZkSU1GMU1HMmV5THlnaERMVWw4NHVUeTBsV3VCbmRSYXNTUDl2clRqZEhoV3ZmRkN0Nlk3dl9jSmw5TU4xNHNwUUJSWm00eTNmR2Ztd3JSLXQ3akNyck9DR1Vtbmd0TEJwdFhwd2lGR2NFZDJTVkRlX3RxOWVSU3d1UWYyRUdvQWVhUVRxWUJ5amkzOUFwV1JXMmVtX0tQZUxRNGlhNGgwQmhWYVJOSXFfZFlKOGtGUmVxVGxXSVdwSWQwWmNoUVBTZmU3U0szb3VSU2U2?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score pos'>+1</span><div><h3>Bitcoin and ethereum prices today: Prices hold despite U.S.-Israel airstrikes</h3><p class='meta'>Yahoo Finance · 2026-05-26 22:37:28 KST (Tue, 26 May 2026 13:37:28 GMT)</p></div></div>
+  <p>미국-이스라엘 공습 헤드라인에도 비트코인·이더리움 가격이 버텼다는 Yahoo Finance 보도. 지정학 충격에 대한 단기 내성이 확인된 점은 크립토 심리에 소폭 긍정적이다.</p>
+  <div class='tags'><span>영향: 호재</span><span>강도: +1</span><span>BTC, ETH, 지정학 리스크</span></div>
+  <a href='https://news.google.com/rss/articles/CBMi_wFBVV95cUxNamZzcVpXTm9OZzJVbWZiRDJKYS04SHcyOFJ4MTVneGpocVkyLUdRUnRHZ1cwVk1jVi0zM19TbURwVDR4WGVBbDZIcG05ektCNFgwZXlLdzQ0ak9seV8xWGEtRUpmNTlFdmsyMFJzS0ZXQUVZcVBMTnlXZ1VOQnVLcHZ3LWtVdVdpcGFaWFQ3OWUyUzVrY202amd0VXJLYmQ1NGFaX0NvNEZUaU1sX0FsZUpubFpwc2xwNTJESGEzeG13M1U2cHVRZFNvbFBQUXJoZ0ZUV05Lem5pZWVGejIycG00bmJiTjFYampPQlVpZjIwRUlCYVcybEVEdC1IQ2s?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score pos'>+1</span><div><h3>Gas prices dip as oil markets bet on diplomacy</h3><p class='meta'>nottinghammd.com · 2026-05-27 00:20:45 KST (Tue, 26 May 2026 15:20:45 GMT)</p></div></div>
+  <p>외교 기대가 유가 시장에 반영되며 휘발유 가격이 하락했다는 지역 매체 보도. 에너지 비용 완화는 소비·인플레이션 측면에서 완충 요인이나 출처 범위가 지역 매체라 신뢰도 가중치는 낮게 본다.</p>
+  <div class='tags'><span>영향: 호재</span><span>강도: +1</span><span>유가, 휘발유, 인플레이션, 소비</span></div>
+  <a href='https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMmhLVjRBRnhmWEE0aHdJekVQMnE0Nmx3VmhYWVF0Ym15dFlYY2gtd2ZsQUZuU0tpaUhEb0hKVGxCY1dHZkZQcXVlOVlSamFFZlFmUGRxelhZNWMyaHdBUkFfc1ZCMGNMNzU4TmxKeHE2WDNyWTY2aUJ0UVVqU1NTWmYwOTlfVmRnV21B?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score mix'>+0</span><div><h3>US Dollar: Positioning turns negative as Fed debate builds – Rabobank</h3><p class='meta'>FXStreet · 2026-05-26 23:17:55 KST (Tue, 26 May 2026 14:17:55 GMT)</p></div></div>
+  <p>Rabobank가 연준 논쟁 속 달러 포지셔닝이 순매도/부정적으로 전환됐다고 평가했다는 FXStreet 보도. 달러 약세 포지션은 위험자산에는 완충 요인일 수 있으나, Fed 불확실성은 함께 남아 있다.</p>
+  <div class='tags'><span>영향: 혼재/불확실</span><span>강도: +0</span><span>DXY, Fed, FX 포지셔닝, 위험자산</span></div>
+  <a href='https://news.google.com/rss/articles/CBMirgFBVV95cUxNbnJtLTIyMFlSTzVZT29PVkl6VjRwYnNYOWlJTDRobTViSnJjR25IeVNzc2R4c1p1TXVyWWlNeUdaN3JPTU1fTGpPc0NaTDNrZ2tJMjAzQnVDcDNpbUx6U2pJWHBZZ19RR2lLeGhuemF4VGJWRDNIN3MzSGpGdlQzd0I3dXBGdmxneGtWdk9fM2JKN3luSVI1Y3RBQWtzWW5OYmRxYTFHS29qNWRB?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article>
+<article class='news-card'>
+  <div class='news-top'><span class='score mix'>+0</span><div><h3>Weekly market commentary</h3><p class='meta'>BlackRock · 2026-05-27 02:10:37 KST (Tue, 26 May 2026 17:10:37 GMT)</p></div></div>
+  <p>BlackRock 주간 시장 코멘터리가 Google News에 업데이트됐다. 구체 숫자는 RSS 제목만으로 확인하지 않았으므로 방향성 점수는 중립 처리하되, 대형 운용사 관점 업데이트로 매크로 체크 필요성이 있다.</p>
+  <div class='tags'><span>영향: 혼재/불확실</span><span>강도: +0</span><span>글로벌 자산배분, 주식, 채권, 매크로</span></div>
+  <a href='https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5' target='_blank' rel='noopener'>URL 열기</a>
+</article></section>
+<div class='section-title'><h2>시그널 산정표</h2><span>강한 호재 +2 / 호재 +1 / 혼재 0 / 악재 -1 / 강한 악재 -2</span></div><section class='panel'><table><thead><tr><th>#</th><th>출처</th><th>뉴스</th><th>점수</th><th>방향</th></tr></thead><tbody><tr><td>1</td><td>Reuters</td><td>UK targets Russian crypto networks in latest sanctions</td><td class='neg'>-1</td><td>악재</td></tr>
+<tr><td>2</td><td>Reuters</td><td>US plans tariffs on USMCA countries, has issues with Canada</td><td class='neg'>-1</td><td>악재</td></tr>
+<tr><td>3</td><td>Investing.com</td><td>Oil Jumps on Fresh US Strikes on Iran but Stocks Stay Upbeat</td><td class='mix'>+0</td><td>혼재/불확실</td></tr>
+<tr><td>4</td><td>Bloomberg.com</td><td>Bitcoin (BTC) Volatility Hits Nine-Month Low as Crypto Takes Breather</td><td class='pos'>+1</td><td>호재</td></tr>
+<tr><td>5</td><td>FXStreet</td><td>US Dollar: Supported by higher-for-longer Fed stance – TD Securities</td><td class='neg'>-1</td><td>악재</td></tr>
+<tr><td>6</td><td>Strategy</td><td>Strategy Completes $1.5 Billion Debt Repurchase and achieves BTC Yield of 13.3% YTD; Now Holds 843,738 BTC</td><td class='pos'>+1</td><td>호재</td></tr>
+<tr><td>7</td><td>Yahoo Finance</td><td>Bitcoin and ethereum prices today: Prices hold despite U.S.-Israel airstrikes</td><td class='pos'>+1</td><td>호재</td></tr>
+<tr><td>8</td><td>nottinghammd.com</td><td>Gas prices dip as oil markets bet on diplomacy</td><td class='pos'>+1</td><td>호재</td></tr>
+<tr><td>9</td><td>FXStreet</td><td>US Dollar: Positioning turns negative as Fed debate builds – Rabobank</td><td class='mix'>+0</td><td>혼재/불확실</td></tr>
+<tr><td>10</td><td>BlackRock</td><td>Weekly market commentary</td><td class='mix'>+0</td><td>혼재/불확실</td></tr><tr><th colspan='3'>합계 및 판정</th><th>+1</th><th>Neutral</th></tr></tbody></table></section>
+<div class='section-title'><h2>브리핑 타임라인</h2><span>KST 기준</span></div><section class='panel'><ol class='timeline'><li><b>2026-05-26 15:47:00 KST</b><span>Bloomberg.com — Bitcoin (BTC) Volatility Hits Nine-Month Low as Crypto Takes Breather</span></li>
+<li><b>2026-05-26 20:03:33 KST</b><span>Investing.com — Oil Jumps on Fresh US Strikes on Iran but Stocks Stay Upbeat</span></li>
+<li><b>2026-05-26 21:14:21 KST</b><span>Strategy — Strategy Completes $1.5 Billion Debt Repurchase and achieves BTC Yield of 13.3% YTD; Now Holds 843,738 BTC</span></li>
+<li><b>2026-05-26 22:37:28 KST</b><span>Yahoo Finance — Bitcoin and ethereum prices today: Prices hold despite U.S.-Israel airstrikes</span></li>
+<li><b>2026-05-26 23:17:55 KST</b><span>FXStreet — US Dollar: Positioning turns negative as Fed debate builds – Rabobank</span></li>
+<li><b>2026-05-27 00:06:25 KST</b><span>FXStreet — US Dollar: Supported by higher-for-longer Fed stance – TD Securities</span></li>
+<li><b>2026-05-27 00:20:45 KST</b><span>nottinghammd.com — Gas prices dip as oil markets bet on diplomacy</span></li>
+<li><b>2026-05-27 02:10:37 KST</b><span>BlackRock — Weekly market commentary</span></li>
+<li><b>2026-05-27 04:56:06 KST</b><span>Reuters — UK targets Russian crypto networks in latest sanctions</span></li>
+<li><b>2026-05-27 06:00:37 KST</b><span>Reuters — US plans tariffs on USMCA countries, has issues with Canada</span></li></ol></section>
+<footer class='status'><span>상태: 생성 완료 · 공개 뉴스 기반 · 투자 조언 아님</span><span><b>Neutral</b> / 10 news / score +1</span></footer>
+</main></body></html>
