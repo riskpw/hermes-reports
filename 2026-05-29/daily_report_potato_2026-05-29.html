@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>오늘의 감자 리포트</title>
+<style>
+:root{--bg:#f5eddf;--card:#fffaf0;--ink:#2f261d;--muted:#766957;--line:#e2d3bd;--accent:#b8792f;--green:#2d7a55;--red:#b24b38;--gray:#80776a;}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#f8f1e6,#efe2cf);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",sans-serif;color:var(--ink);}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 28px 40px;}
+header{border-radius:28px;padding:34px;background:radial-gradient(circle at top right,#f0c98d55,transparent 35%),#fff7e8;border:1px solid var(--line);box-shadow:0 18px 50px #7b542213;}
+.label{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:#ead8bd;color:#6e4a1e;font-weight:700;font-size:13px;letter-spacing:.02em}
+h1{font-size:46px;margin:18px 0 10px;line-height:1.05} .subtitle{font-size:18px;color:var(--muted);margin:0;}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:20px} .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 10px 30px #6d4a1b0e;}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0} .meta div{background:#fffdf7;border:1px solid var(--line);border-radius:18px;padding:16px} .meta b{display:block;font-size:22px;margin-top:4px}
+.summary3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0} .summary3 .card{min-height:150px} .summary3 h2,.card h2{font-size:18px;margin:0 0 10px}
+.signal{font-size:42px;font-weight:900;color:#775f31;}
+.news-list{display:grid;gap:14px;margin-top:18px} .news-card{background:#fffaf0;border:1px solid var(--line);border-radius:22px;padding:18px 18px 16px;}
+.news-top{display:flex;justify-content:space-between;gap:12px;align-items:center} .badge{font-size:12px;font-weight:800;border-radius:999px;padding:7px 10px} .pos{background:#e4f1e9;color:var(--green)} .neg{background:#f6e3dc;color:var(--red)} .neu{background:#eee8dd;color:var(--gray)}
+h3{font-size:20px;margin:12px 0 8px;line-height:1.32} p{line-height:1.62} .source,.time{color:var(--muted);font-size:13px} .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0} .meta-row span{background:#f2e5d1;border-radius:12px;padding:7px 10px;font-size:13px} a{color:#8b571e;font-weight:700;text-decoration:none}
+table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fffdf7} th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px} th{background:#ead8bd} tr:last-child td{border-bottom:none}
+ul.timeline{list-style:none;padding:0;margin:0} .timeline li{padding:11px 0;border-bottom:1px dashed var(--line);line-height:1.45} .timeline li:last-child{border-bottom:none} .timeline span{color:var(--accent);font-weight:700}
+.disclaimer{font-size:13px;color:#6e5d49;background:#fff8e9;border:1px dashed #caa775;border-radius:16px;padding:14px;margin-top:18px}
+footer{margin-top:22px;padding:14px 18px;border-radius:18px;background:#3c3126;color:#fff3df;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px}
+@media(max-width:900px){.grid,.summary3,.meta{grid-template-columns:1fr} h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="label">daily_report_potato · news signal brief</div>
+  <h1>오늘의 감자 리포트</h1>
+  <p class="subtitle">코인/크립토 및 국제경제 공개 뉴스 기반 데일리 시그널 브리프</p>
+  <div class="meta">
+    <div>기준 시각<b>2026-05-29 07:00 KST</b></div><div>분석 범위<b>최근 24시간</b></div><div>유효 뉴스<b>12개</b></div><div>최종 시그널<b>Caution</b></div>
+  </div>
+  <div class="disclaimer">본 리포트는 공개 뉴스 RSS에서 확인한 제목·출처·발행시각/최신성 근거를 바탕으로 작성한 정보 요약입니다. 투자 조언, 금융·사업 투자 권유, 매수·매도 추천이 아닙니다.</div>
+</header>
+<section class="summary3">
+  <div class="card"><h2>최종 뉴스 시그널</h2><div class="signal">Caution</div><p>총점 <b>-3</b>점. 호재 4건, 악재 6건, 혼재 2건.</p></div>
+  <div class="card"><h2>핵심 압박 요인</h2><p>Yahoo Finance · CoinDesk 중심의 청산/ETF 유출/가격 약세 헤드라인이 크립토 베타를 낮췄습니다.</p></div>
+  <div class="card"><h2>완충 요인</h2><p>Reuters가 위험자산 심리의 급격한 훼손을 일부 제한했습니다.</p></div>
+</section>
+<div class="grid">
+  <section><div class="card"><h2>상세 뉴스 리스트</h2><div class="news-list">
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">악재</span><span class="time">2026-05-29 05:43 KST</span></div>
+  <h3>Bitcoin Falls Below $73,000 Despite Trump’s Crypto Capital Push - Bloomberg.com</h3>
+  <p class="source">출처: <b>Bloomberg.com</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 20:43:12 GMT</p>
+  <p>단기 가격 약세와 정책 기대의 불일치가 동시에 확인되어 위험선호에 부담.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-1</b></span><span>자산/테마: <b>BTC·현물ETF·크립토 심리</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQRmhpaHd4ajJ1d3V0ZUtQUVRxNjQyLWNlMjVZazJ1ekVPWXVBODJrbjdWZjhmTjV0dXg4ZkxNWkJfeGU1V2NEMHpyemYyekhIZHpmSGpUQnNPb0c2Xy11ZmFBUkdTVmIwdmZlMGJvWlg3amxyTGdUY01wWnp6dGR4QTBWOGstR0d5UmRVUU9kMVUwUFlIb0lrWWlsUS1EZEtXZU9aOG81MWNSaEVPZXdveVUzUQ?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">악재</span><span class="time">2026-05-29 00:21 KST</span></div>
+  <h3>Bitcoin Traders Increasingly Convinced Price Will Fall Below $70K by End of May - Yahoo Finance</h3>
+  <p class="source">출처: <b>Yahoo Finance</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 15:21:43 GMT</p>
+  <p>트레이더들이 월말 7만 달러 하향 가능성에 더 무게를 둔다는 보도.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-1</b></span><span>자산/테마: <b>BTC 옵션·파생심리</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQbzBMeFhUeC11Vi1IbGdkcFM2MlBhLUFpUXhkakdmRkVFaGh4aWZSMzAwWjJGZzlIR2JCWEliRm5NMzIyQUFlVmhuSDZZcnpzbzhRbkF0YXZTUGtvZnV3VlhqV19ET1dDZ2IxQm5Va19wdTdlNFBDdEt0ZHl1b3hIUWcydGxFVUtPaWNhR0pvQkg5Tzl1UTVOZVNnWEpISFJoY1RpSTI5YWUxR1BDRnc?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">강한 악재</span><span class="time">2026-05-29 02:30 KST</span></div>
+  <h3>$1 billion in crypto got liquidated in a day: Bitcoin price check-in - Yahoo Finance</h3>
+  <p class="source">출처: <b>Yahoo Finance</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 17:30:32 GMT</p>
+  <p>대규모 청산은 레버리지 축소와 변동성 확대 신호로 강한 악재.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-2</b></span><span>자산/테마: <b>레버리지·BTC·알트코인</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNYTNkZV93bTVUT0U5SDNUbGdGdXRvZWVxcHZVV1ZuNXZqb0twYTVIdVlFMTlUTHVXSGR6RzdXUFp6eFBPZDB4RWJ5QVJoN0VOQVR3SXdPUFg1WVJSRjZqRmpFYm5NN1ljWnJUTmQxcUhwS0xjZE9Cb2hjak12TF96dmtfMi0?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">강한 악재</span><span class="time">2026-05-28 14:58 KST</span></div>
+  <h3>IBIT news: BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record - CoinDesk</h3>
+  <p class="source">출처: <b>CoinDesk</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 05:58:28 GMT</p>
+  <p>IBIT의 대규모 일일 유출은 기관 수요 둔화 우려를 키움.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-2</b></span><span>자산/테마: <b>IBIT·현물ETF 자금흐름</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPUzJnMFZxYW85bDQ0RUVaM29ZTDZKLVRYOE1zTEJGYjJmSUhITnRlT3BQVUUyR2RFdUw2SGZPc20tTjlJODBTMmNYTWlFY19jV0ZkM01JSU5fQnFOUlZEaWdpYWtsaldKTGF3UWFoX2paRmtQR29OTjZGZ3VObFA0Y2RvaVV0eFFQb0FNZmpqUG5hMzIxQmFKbmpRSnRvYVF1Z2d4YldWMWZNMFNVbHYzbF9yeHlKM01fZi1RUl9wNEQ4ZU1ZVzg3b3NuWQ?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge pos">호재</span><span class="time">2026-05-28 19:47 KST</span></div>
+  <h3>CME ends bitcoin weekend gaps with launch of 24/7 futures trading from Friday - CoinDesk</h3>
+  <p class="source">출처: <b>CoinDesk</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 10:47:51 GMT</p>
+  <p>24/7 선물 거래 출시는 가격발견 연속성 개선과 제도권 인프라 확대로 해석.</p>
+  <div class="meta-row"><span>영향 방향: <b>상방</b></span><span>강도/점수: <b>+1</b></span><span>자산/테마: <b>BTC 선물·시장구조</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeVVLcFI5YzI5WGdhV0VPM2ROYzRrVk5ySFVlajdYcVhQd0tKSEdtekZEV0hiTmk3V1o4ckpUTFo2X1Q0VzZzM1lrdUo5Z2w2UjlRdVI5OGF5YXFBREtjMU5yaE9Qb1M3Xy1XX1hsdGFuQS1kSVRfLVIwYTJ4MHVMNDhwaWdCOW1Td1ZETFZfajEtVGRwcTBqY3NlTlJjaF9NMGlTR1ZhNnFmbXJ3OU1LS2xiUThCcFdyYk5pREpFaUI?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neu">혼재/불확실</span><span class="time">2026-05-29 03:31 KST</span></div>
+  <h3>FBI seizes record-setting $8 billion in cryptocurrency amid intercontinental &#x27;scam compound&#x27; crackdown - Fox News</h3>
+  <p class="source">출처: <b>Fox News</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 18:31:52 GMT</p>
+  <p>단기에는 규제 헤드라인 부담이나 장기적으로는 불법자금 정화 효과가 혼재.</p>
+  <div class="meta-row"><span>영향 방향: <b>중립/혼재</b></span><span>강도/점수: <b>+0</b></span><span>자산/테마: <b>규제·범죄단속·거래소 리스크</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcjZ1NUttVVVBMXFXTXpQbU51ZUUwOFNHaGxvRUVMeXctUWdmcnB5WnhQMnlwSzgwWjZkU1NqZjc3UEFYVjVHZ05XRWFOR3I3WGFBZVhrWHBfZ2daUDRTanpaNWxfR2pfc2ZINzlnNkxVWFJEeVF4X3RXQTdseERWRHZ3UG40N0pteXRWZHQyN2h0Q0lkRnE1X1ZybXNHTFRPcHhEMnE2NERTSGYwekM2T0NkU0xBWGR6Z1Z6ZW54dEzSAcYBQVVfeXFMUGY1M2JadHdtd3VsQ1A1d2JoYkI2a0RiRGpCQTJSWEVBRW84ME8zUVNLbGpIVURmd05iUHJKM2Zod09ZU2N4WVdqQm5RRHRXZTVvVUZ2cld6cmd3UXlpeWdyMnBVdGx0dGhhTHd2X2tBdEctRm5MaEJXai1ILTVuNG9UaUZBbG94LS1jdzBkRkNCd01TMng3REJ6ZXVfYnI5RF9vNDVINGJiZE9ma2J3bC1jN0hndkkzV1NIcjVPaUlILS1IeDF3?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge pos">호재</span><span class="time">2026-05-29 05:33 KST</span></div>
+  <h3>Oil Prices Ease on Possible Agreement for Strait’s Reopening - The New York Times</h3>
+  <p class="source">출처: <b>The New York Times</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 20:33:10 GMT</p>
+  <p>해협 재개 가능성에 유가가 완화되면 인플레 압력과 지정학 프리미엄이 낮아질 수 있음.</p>
+  <div class="meta-row"><span>영향 방향: <b>상방</b></span><span>강도/점수: <b>+1</b></span><span>자산/테마: <b>유가·인플레이션·중동 리스크</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFA3dkRJeWVEaHVQdUZ3b0hMeHN3MkM1UTh3SVNKOVpQaFRPSDU3ZVMyQVhoZUppWjB3TEEzWG5jNUdqYjh4bk1GcVJtTHYtUlRrdUlycmpRc0NQTUY3U0FvVjFPQm4tdDZvNnd2NXZ5ZXU3V2pWdXc?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">악재</span><span class="time">2026-05-29 05:29 KST</span></div>
+  <h3>US imposes fresh sanctions on Iran&#x27;s military oil sales, Treasury says - Reuters</h3>
+  <p class="source">출처: <b>Reuters</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 20:29:45 GMT</p>
+  <p>추가 제재는 에너지 공급 및 지정학 리스크 프리미엄을 재점화할 수 있음.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-1</b></span><span>자산/테마: <b>유가·지정학·제재</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOTGN5U0hILU5zdG9XalBqazFVZGtCQXZmTnY5SlZ3Y1g2d293c0tGaXM0QnpXUkRGNWxMclNJSl96YmFPYnNRd3V0aEhKSDd0eEtBcmlTX1B6VXNRZlNic0ZRMGF5dmtsU3RZdDczS1FTWFRCS2FnTEZfMkxZRnhENHVEMDh0N2VtYjl4WXhIUGV0RnVJNk80TGNBdm1xbTQzUG1pNmhySjcwVXAyNVYtSjVTaw?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge pos">강한 호재</span><span class="time">2026-05-29 06:07 KST</span></div>
+  <h3>Trading Day: Stocks sizzle on ceasefire extension - Reuters</h3>
+  <p class="source">출처: <b>Reuters</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 21:07:50 GMT</p>
+  <p>휴전 연장에 주식이 강세라는 보도는 광범위한 위험선호 회복 신호.</p>
+  <div class="meta-row"><span>영향 방향: <b>상방</b></span><span>강도/점수: <b>+2</b></span><span>자산/테마: <b>미국주식·위험자산·휴전</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNeVpwUm1PTnpNZE02LWh1T3F1TjZjS2EtX080LTQ0Rld5X3dHelJfaFI5TDZJZXlXN2VqUjlLdm9nTnoxX0U0SkpMaGM3RWc3MDFtaFh3WTVRMnoyQ1ZhYXNKWHFHbEhhZWI3VjNUaFVHQXR3anRRNm1oeFl2Y0pGRXlfT1FKV0xGZmpSV3dJVFRHam54eEdiWHhuUnIzRUlFblpzOTdn?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge pos">호재</span><span class="time">2026-05-29 06:20 KST</span></div>
+  <h3>investingLive Americas FX news wrap 28 May: Softer PCE pressures dollar and yields - investingLive</h3>
+  <p class="source">출처: <b>investingLive</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 21:20:42 GMT</p>
+  <p>부드러운 PCE가 달러와 금리를 눌렀다는 보도는 유동성/성장주·크립토에 우호적.</p>
+  <div class="meta-row"><span>영향 방향: <b>상방</b></span><span>강도/점수: <b>+1</b></span><span>자산/테마: <b>달러·미국채·PCE</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPa09oX0hzeFJhM1Y3a3hEYklwd1lxRjhnWk1sb254S3o3UmQ2Y1VpWU5Ra0UwRkhMZHRPMUktWEkzWURhREZ2c2FKVDdvYkt2WWxzNFdicWlEcjZ6NWY5TDI1WC1qRjcxZDMzUjgwMUhPdnBqVVFUNnZvTE1hZjU5b3A2clJpTUJfdDkwbXR0SllFRl80Ykc0TVdTbk5ka1lVZk0wNllvbFM0dHI4LUUzcFVSWk5RQWwtdlpUQW8ydw?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neg">악재</span><span class="time">2026-05-28 19:33 KST</span></div>
+  <h3>Inflation challenges US Treasuries&#x27; traditional role in portfolios - Reuters</h3>
+  <p class="source">출처: <b>Reuters</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 10:33:36 GMT</p>
+  <p>인플레이션이 미 국채의 안전자산 역할을 흔든다는 분석은 금융여건 불확실성 요인.</p>
+  <div class="meta-row"><span>영향 방향: <b>하방</b></span><span>강도/점수: <b>-1</b></span><span>자산/테마: <b>미국채·인플레이션·포트폴리오</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQRU5vSC11X201bWhuY05ZS0FMSk13R2cwcXlYRXJhbGwtOWpaNGQ0cEc2WnNSaTJybzdhRy14TlRrakw3Z0MxcGhwc2x6NkZTaHpPSkJRNDlVczF1WWR4bmR4SzFabjI3Qk5BVE5rSUs1SFpXWFcwM0EyZ3dHa25FTzhkYTlEY1AxTExodmlsWG9yYUtwd20xRU9WUzZnMG1JVW1ReHNKcXVKMVByQ01VdDFXOA?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article>
+
+<article class="news-card">
+  <div class="news-top"><span class="badge neu">혼재/불확실</span><span class="time">2026-05-28 10:46 KST</span></div>
+  <h3>Bank of Korea leaves policy rate unchanged at 2.5% as inflation creeps above target - Crypto Briefing</h3>
+  <p class="source">출처: <b>Crypto Briefing</b> · 최신성 근거: Google News RSS pubDate Thu, 28 May 2026 01:46:18 GMT</p>
+  <p>동결과 물가 상방이 함께 언급되어 국내 유동성에는 중립~혼재.</p>
+  <div class="meta-row"><span>영향 방향: <b>중립/혼재</b></span><span>강도/점수: <b>+0</b></span><span>자산/테마: <b>한국금리·원화·인플레이션</b></span></div>
+  <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5ESW5rRXJqeGZ6ZFNYSGdEc2kxRTAyWkJHVEt4MjNCM2laN3B4cVhUblZKaTI1Y1ViTUdBTUJhenRqanBqekpNUC1PR2pDX3Bpclk3VDdIOHk0X2F1M1FRZkdqWEpYTkxoazZOQVI1NDhEYVN2?oc=5" target="_blank" rel="noopener">기사 URL</a>
+</article></div></div></section>
+  <aside>
+    <div class="card"><h2>시그널 산정표</h2><table><thead><tr><th>#</th><th>출처</th><th>제목</th><th>판정</th><th>점수</th></tr></thead><tbody><tr><td>1</td><td>Bloomberg.com</td><td>Bitcoin Falls Below $73,000 Despite Trump’s Crypto Capital Push - Bloomberg.com</td><td>악재</td><td>-1</td></tr>
+<tr><td>2</td><td>Yahoo Finance</td><td>Bitcoin Traders Increasingly Convinced Price Will Fall Below $70K by End of May - Yaho</td><td>악재</td><td>-1</td></tr>
+<tr><td>3</td><td>Yahoo Finance</td><td>$1 billion in crypto got liquidated in a day: Bitcoin price check-in - Yahoo Finance</td><td>강한 악재</td><td>-2</td></tr>
+<tr><td>4</td><td>CoinDesk</td><td>IBIT news: BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow </td><td>강한 악재</td><td>-2</td></tr>
+<tr><td>5</td><td>CoinDesk</td><td>CME ends bitcoin weekend gaps with launch of 24/7 futures trading from Friday - CoinDe</td><td>호재</td><td>+1</td></tr>
+<tr><td>6</td><td>Fox News</td><td>FBI seizes record-setting $8 billion in cryptocurrency amid intercontinental &#x27;scam com</td><td>혼재/불확실</td><td>+0</td></tr>
+<tr><td>7</td><td>The New York Times</td><td>Oil Prices Ease on Possible Agreement for Strait’s Reopening - The New York Times</td><td>호재</td><td>+1</td></tr>
+<tr><td>8</td><td>Reuters</td><td>US imposes fresh sanctions on Iran&#x27;s military oil sales, Treasury says - Reuters</td><td>악재</td><td>-1</td></tr>
+<tr><td>9</td><td>Reuters</td><td>Trading Day: Stocks sizzle on ceasefire extension - Reuters</td><td>강한 호재</td><td>+2</td></tr>
+<tr><td>10</td><td>investingLive</td><td>investingLive Americas FX news wrap 28 May: Softer PCE pressures dollar and yields - i</td><td>호재</td><td>+1</td></tr>
+<tr><td>11</td><td>Reuters</td><td>Inflation challenges US Treasuries&#x27; traditional role in portfolios - Reuters</td><td>악재</td><td>-1</td></tr>
+<tr><td>12</td><td>Crypto Briefing</td><td>Bank of Korea leaves policy rate unchanged at 2.5% as inflation creeps above target - </td><td>혼재/불확실</td><td>+0</td></tr></tbody></table><p class="source">기준: 강한 호재 +2, 호재 +1, 혼재/불확실 0, 악재 -1, 강한 악재 -2. 합산 -3점 → Caution.</p></div>
+    <div class="card" style="margin-top:18px"><h2>브리핑 타임라인</h2><ul class="timeline"><li><b>10:46</b> <span>Crypto Briefing</span> — Bank of Korea leaves policy rate unchanged at 2.5% as inflation creeps above target - Crypto Briefing</li>
+<li><b>14:58</b> <span>CoinDesk</span> — IBIT news: BlackRock bitcoin ETF sheds $528 million, the second-largest daily outflow on record - CoinDesk</li>
+<li><b>19:33</b> <span>Reuters</span> — Inflation challenges US Treasuries&#x27; traditional role in portfolios - Reuters</li>
+<li><b>19:47</b> <span>CoinDesk</span> — CME ends bitcoin weekend gaps with launch of 24/7 futures trading from Friday - CoinDesk</li>
+<li><b>00:21</b> <span>Yahoo Finance</span> — Bitcoin Traders Increasingly Convinced Price Will Fall Below $70K by End of May - Yahoo Finance</li>
+<li><b>02:30</b> <span>Yahoo Finance</span> — $1 billion in crypto got liquidated in a day: Bitcoin price check-in - Yahoo Finance</li>
+<li><b>03:31</b> <span>Fox News</span> — FBI seizes record-setting $8 billion in cryptocurrency amid intercontinental &#x27;scam compound&#x27; crackdown - Fox News</li>
+<li><b>05:29</b> <span>Reuters</span> — US imposes fresh sanctions on Iran&#x27;s military oil sales, Treasury says - Reuters</li>
+<li><b>05:33</b> <span>The New York Times</span> — Oil Prices Ease on Possible Agreement for Strait’s Reopening - The New York Times</li>
+<li><b>05:43</b> <span>Bloomberg.com</span> — Bitcoin Falls Below $73,000 Despite Trump’s Crypto Capital Push - Bloomberg.com</li>
+<li><b>06:07</b> <span>Reuters</span> — Trading Day: Stocks sizzle on ceasefire extension - Reuters</li>
+<li><b>06:20</b> <span>investingLive</span> — investingLive Americas FX news wrap 28 May: Softer PCE pressures dollar and yields - investingLive</li></ul></div>
+  </aside>
+</div>
+<footer><span>상태: 공개 뉴스 기반 · URL/출처/발행시각 확인 항목만 사용</span><span>생성 파일: daily_report_potato_2026-05-29.html / .png</span></footer>
+</div>
+<script>console.log('daily_report_potato rendered', {newsCount:12, signal:'Caution', score:-3});</script>
+</body></html>
